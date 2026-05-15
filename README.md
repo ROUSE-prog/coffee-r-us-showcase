@@ -5,6 +5,15 @@ This project demonstrates advanced React concepts including routing, reusable co
 
 ---
 
+
+## 📸 Screenshots
+
+
+https://github.com/user-attachments/assets/c0af38c0-d807-474e-a2ae-b51a96d3ec52
+
+
+---
+
 ## ✨ Features
 
 - React Router multi-page SPA
@@ -143,15 +152,6 @@ const [coffees, setCoffees] = useLocalStorage(
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots of:
-- Home Page
-- Shop Page
-- Admin Portal
-- Cart Page
-
----
 
 ## 👨‍💻 Author
 
