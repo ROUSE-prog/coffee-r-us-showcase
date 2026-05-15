@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CoffeeCard from "../components/CoffeeCard";
+import React from "react";
 
 function Shop({ coffees, deleteCoffee, addToCart }) {
   const [searchTerm, setSearchTerm] = useState("");
