@@ -1,0 +1,23 @@
+import { useState, useEffect } from "react";
+
+// Custom hook for persistent localStorage state
+function useLocalStorage(key, initialValue) {
+  const [value, setValue] = useState(() => {
+    const storedValue = localStorage.getItem(key);
+
+    return storedValue
+      ? JSON.parse(storedValue)
+      : initialValue;
+  });
+
+  useEffect(() => {
+    localStorage.setItem(
+      key,
+      JSON.stringify(value)
+    );
+  }, [key, value]);
+
+  return [value, setValue];
+}
+
+export default useLocalStorage;
