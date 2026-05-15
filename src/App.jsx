@@ -1,6 +1,6 @@
 import useLocalStorage from "./hooks/useLocalStorage";
 import { Routes, Route } from "react-router-dom";
-
+import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
@@ -22,9 +22,10 @@ const [cart, setCart] = useLocalStorage(
   []
 );
 
- // Add selected coffee item to cart state
-function addToCart(coffee) {
-  setCart([...cart, coffee]);
+
+// Add a new coffee product to storefront state
+function addCoffee(newCoffee) {
+  setCoffees([...coffees, newCoffee]);
 }
 
   // Remove a coffee product from the storefront
